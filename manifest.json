@@ -1,0 +1,21 @@
+{
+  "name": "QuickChat",
+  "short_name": "QuickChat",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f6fa",
+  "theme_color": "#5E3FDE",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://i.ibb.co/F4b8wMcd/imagine-draw-chat-app-logo-1755450297617-removebg-preview.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/F4b8wMcd/imagine-draw-chat-app-logo-1755450297617-removebg-preview.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
