@@ -11,7 +11,10 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
        <!-- Title Logo / Favicon -->
-    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5mYqHf-rgAPDbrr7eV6l1DRRzngev_LsccbHd3l-q9RH3tgVKVGaR6I2T&s=10">
+    <link rel="icon" type="image/png" href="images/icon-192x192.png">
+  
+     <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
     <style>
         /* ===== RESET & BASE ===== */
         * {
@@ -1126,7 +1129,15 @@
                 header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.08)';
             }
         });
-
+        //pwa//
+        if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(reg => console.log("Service Worker Registered"))
+      .catch(err => console.log("Service Worker Failed", err));
+  });
+        }
+        //end pwa //
         // Counter animation for stats (if added later)
         // You can add counter animation when you add statistics numbers
     </script>
