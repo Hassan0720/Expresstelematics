@@ -1,23 +1,22 @@
 {
-    "name":"Express Telematics",
-    "short_name":"ET",
-    "start_url":"index.html",
-    "display":"standalone",
-    "background_color":"#5900b3",
-    "theme_color":"black",
-    "scope": ".",
-    "description":"Express Telematics – Tech & Security Solutions in Maharajganj
-Trusted services for CCTV, GPS Tracking, IT support & Security Hardware. Serving Maharajganj and surrounding areas with 12+ years of expertise..",
-    "icons":[
+  "name": "Express Telematics",
+  "short_name": "Telematics",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
     {
-    "src":"images/icon-192x192.png",                     
-    "sizes":"192x192",
-    "type":"image/png"
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-    "src":"images/icon-512x512.png",
-    "sizes":"512x512",
-    "type":"image/png"
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
