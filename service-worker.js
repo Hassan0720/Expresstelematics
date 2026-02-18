@@ -1,17 +1,18 @@
-const CACHE_NAME = "quickchat-v1";
-const urlsToCache = ["/", "/index.html", "/manifest.json"];
-
-self.addEventListener("install", event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(urlsToCache);
+var staticCacheName = "ET";
+ 
+self.addEventListener("install", function (e) {
+  e.waitUntil(
+    caches.open(staticCacheName).then(function (cache) {
+      return cache.addAll(["/"]);
     })
   );
 });
-
-self.addEventListener("fetch", event => {
+ 
+self.addEventListener("fetch", function (event) {
+  console.log(event.request.url);
+ 
   event.respondWith(
-    caches.match(event.request).then(response => {
+    caches.match(event.request).then(function (response) {
       return response || fetch(event.request);
     })
   );
