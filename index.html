@@ -10,11 +10,11 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-       <!-- Title Logo / Favicon -->
-    <link rel="icon" type="image/png" href="images/icon-192x192.png">
-  
-     <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#000000">
+    
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0d6efd">
+
+
     <style>
         /* ===== RESET & BASE ===== */
         * {
@@ -972,7 +972,7 @@
                         <i class="fas fa-user-check"></i>
                     </div>
                     <div class="feature-text">
-                        <h4>505+ Happy Clients</h4>
+                        <h4>500+ Happy Clients</h4>
                         <p>Serving businesses and homes across Uttar Pradesh.</p>
                     </div>
                 </div>
@@ -1129,17 +1129,21 @@
                 header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.08)';
             }
         });
-        //pwa//
-        if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("service-worker.js")
-      .then(reg => console.log("Service Worker Registered"))
-      .catch(err => console.log("Service Worker Failed", err));
-  });
-        }
-        //end pwa //
+
         // Counter animation for stats (if added later)
         // You can add counter animation when you add statistics numbers
-    </script>
+    </script> 
+     <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registered successfully');
+          }, function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+  </script>
 </body>
-</html>
+                                                    </html>
