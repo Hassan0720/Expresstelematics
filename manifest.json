@@ -1,7 +1,7 @@
 
 {
   "name": "Express Telematics",
-  "short_name": "Telematics",
+  "short_name": "ExpressTelematics",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
